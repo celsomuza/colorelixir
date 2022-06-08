@@ -25,10 +25,7 @@ struct MenuView: View {
                     .navigationTitle("")
                             
                 
-                
                 Image("imgMenu")
-                //.resizable()
-                //.frame(width: UIScreen.main.bounds.width * 0.4, height: UIScreen.main.bounds.height * 0.3)
                 .scaledToFit()
                 .padding()
                 

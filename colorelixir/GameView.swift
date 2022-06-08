@@ -15,7 +15,7 @@ struct GameView: View {
             GameContentView()
                 .navigationTitle("Como jogar?")
             Button (action: { self.gameIsActive = false } ){
-                Text("Estou Pronto")
+                Text("Estou Pronto!")
                     .bold()
                     .frame(width: 280, height: 50)
                     .background(Color.black)
