@@ -34,25 +34,13 @@ struct MenuView: View {
                 
                 
                 NavigationLink(destination: GameView(gameIsActive: self.$isActive),isActive: self.$isActive, label: {
-                    Text("Start")
+                    Text("Vamos Nessa!")
                         .bold()
                         .frame(width: 280, height: 50)
                         .background(Color.black)
                         .foregroundColor(.white)
                         .cornerRadius(10)
                         
-                        
-                })
-                
-                NavigationLink(destination: InstructionsView(instructionsIsActive: self.$isActive),isActive: self.$isActive, label: {
-                    Text("Instructions")
-                        .bold()
-                        .frame(width: 280, height: 50)
-                        .background(Color.black)
-                        .foregroundColor(.white)
-                        .cornerRadius(10)
-                        .padding()
-                    
                         
                 })
                 
