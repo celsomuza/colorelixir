@@ -1,0 +1,32 @@
+{
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  },
+  "resources" : [
+    {
+      "filename" : "pocaoAmarela.arreferenceimage"
+    },
+    {
+      "filename" : "pocaoAzul.arreferenceimage"
+    },
+    {
+      "filename" : "pocaoBranca.arreferenceimage"
+    },
+    {
+      "filename" : "pocaoLaranja.arreferenceimage"
+    },
+    {
+      "filename" : "pocaoPreta.arreferenceimage"
+    },
+    {
+      "filename" : "pocaoRoxa.arreferenceimage"
+    },
+    {
+      "filename" : "pocaoVerde.arreferenceimage"
+    },
+    {
+      "filename" : "pocaoVermelha.arreferenceimage"
+    }
+  ]
+}

@@ -6,11 +6,12 @@
 //
 
 import SwiftUI
+import RealityKit
+import ARKit
 
 struct GameView: View {
-    @Binding var gameIsActive : Bool
-    
     var body: some View {
+
         VStack(alignment: .center) {
             GameContentView()
                 .navigationTitle("Como jogar?")
@@ -47,5 +48,7 @@ struct GameContentView: View {
             
            
         }
+
+        return ARViewContainer.init()
     }
 }
