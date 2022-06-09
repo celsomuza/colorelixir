@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		7C44D60A284FC82E00B10686 /* GameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C44D609284FC82E00B10686 /* GameView.swift */; };
+		7CA5E44B2852612F000CA2C6 /* InstructionsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CA5E44A2852612F000CA2C6 /* InstructionsView.swift */; };
 		EA3C0D6C284A78850075FA37 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA3C0D6B284A78850075FA37 /* AppDelegate.swift */; };
 		EA3C0D6E284A78850075FA37 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA3C0D6D284A78850075FA37 /* ContentView.swift */; };
 		EA3C0D70284A78850075FA37 /* Experience.rcproject in Sources */ = {isa = PBXBuildFile; fileRef = EA3C0D6F284A78850075FA37 /* Experience.rcproject */; };
@@ -17,6 +18,7 @@
 
 /* Begin PBXFileReference section */
 		7C44D609284FC82E00B10686 /* GameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameView.swift; sourceTree = "<group>"; };
+		7CA5E44A2852612F000CA2C6 /* InstructionsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InstructionsView.swift; sourceTree = "<group>"; };
 		EA3C0D68284A78850075FA37 /* colorelixir.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = colorelixir.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EA3C0D6B284A78850075FA37 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EA3C0D6D284A78850075FA37 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; tabWidth = 4; };
@@ -56,6 +58,7 @@
 		EA3C0D6A284A78850075FA37 /* colorelixir */ = {
 			isa = PBXGroup;
 			children = (
+				7CA5E44A2852612F000CA2C6 /* InstructionsView.swift */,
 				7C44D609284FC82E00B10686 /* GameView.swift */,
 				EA3C0D6B284A78850075FA37 /* AppDelegate.swift */,
 				EA3C0D6D284A78850075FA37 /* ContentView.swift */,
@@ -144,6 +147,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				EA3C0D6E284A78850075FA37 /* ContentView.swift in Sources */,
+				7CA5E44B2852612F000CA2C6 /* InstructionsView.swift in Sources */,
 				EA3C0D6C284A78850075FA37 /* AppDelegate.swift in Sources */,
 				7C44D60A284FC82E00B10686 /* GameView.swift in Sources */,
 				EA3C0D70284A78850075FA37 /* Experience.rcproject in Sources */,

@@ -6,8 +6,9 @@
           "__content" : [
             {
               "arAnchorSpecification" : {
-                "alignment" : "horizontal",
-                "name" : "surface"
+                "name" : "image",
+                "physicalWidth" : 0.14000000059604645,
+                "url" : "image:99220ea1644c9fa3497e9d0d31e81f97\/pocaoRoxo.png"
               },
               "behaviors" : [
 
@@ -17,15 +18,215 @@
                 -9.8000001907348633,
                 0
               ],
-              "identifier" : "F9610871-0955-494F-A5C3-51D1A281BAB3",
+              "identifier" : "A588F990-F559-4089-8E10-F719762EAA72",
               "material" : "concrete",
               "overrides" : {
                 "children" : {
-                  "4A213441-135C-450E-8EF8-1A4EAB267C1D" : null,
-                  "5BCBAACC-894A-49AB-A4CC-0F9C6370A2A7" : null,
-                  "7F5F1ADC-E5E4-4EF5-A5B5-FC43B071FFA5" : null,
-                  "632E476F-1E55-4E30-9723-1C51DD2E8B89" : null,
-                  "2546049C-3DF9-47E3-A379-87426DAD0EBE" : {
+                  "91A73313-9615-46BD-B9A2-BFF528C82437" : {
+                    "overrides" : {
+                      "children" : {
+                        "USDScene" : {
+                          "overrides" : {
+                            "arguments" : [
+                              [
+                                "includeSceneScaling",
+                                {
+                                  "typeName" : "Bool",
+                                  "value" : false
+                                }
+                              ],
+                              [
+                                "subpath",
+                                {
+                                  "typeName" : "String",
+                                  "value" : ""
+                                }
+                              ],
+                              [
+                                "url",
+                                {
+                                  "typeName" : "String",
+                                  "value" : "model:b6faf28db5be8a86aef3f6f714824ef8\/pocoesRoxo.usdz"
+                                }
+                              ],
+                              [
+                                "withDescendants",
+                                {
+                                  "typeName" : "Bool",
+                                  "value" : true
+                                }
+                              ]
+                            ],
+                            "factory" : {
+                              "identifier" : "com.apple.af.FileImportAssetFactory",
+                              "version" : "0.0"
+                            },
+                            "runtimeAttributes" : [
+                              [
+                                "RuntimeIdentifier",
+                                {
+                                  "typeName" : "UUID",
+                                  "value" : "A036435F-777F-4DD7-8660-C7E4125B7078"
+                                }
+                              ]
+                            ]
+                          },
+                          "transform" : {
+                            "matrix" : [
+                              1,
+                              0,
+                              0,
+                              0,
+                              0,
+                              1,
+                              0,
+                              0,
+                              0,
+                              0,
+                              1,
+                              0,
+                              0,
+                              0,
+                              0,
+                              1
+                            ]
+                          }
+                        }
+                      },
+                      "factory" : {
+                        "identifier" : "com.apple.af.Group",
+                        "version" : "0.0"
+                      },
+                      "runtimeAttributes" : [
+                        [
+                          "RuntimeIdentifier",
+                          {
+                            "typeName" : "UUID",
+                            "value" : "C820CB81-1CAA-4785-B812-7DE62B698F13"
+                          }
+                        ],
+                        [
+                          "entityName",
+                          {
+                            "typeName" : "String",
+                            "value" : "pocaoRoxaObj"
+                          }
+                        ],
+                        [
+                          "rigidBody-enabled",
+                          {
+                            "typeName" : "Bool",
+                            "value" : true
+                          }
+                        ],
+                        [
+                          "rigidBody-motionType",
+                          {
+                            "typeName" : "REMotionType",
+                            "value" : "static"
+                          }
+                        ]
+                      ]
+                    },
+                    "transform" : {
+                      "matrix" : [
+                        0.0010184907587245107,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0.0010184907587245107,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0.0010184908751398325,
+                        0,
+                        -0.0050679752603173256,
+                        0.074738629162311554,
+                        -0.14643679559230804,
+                        1
+                      ]
+                    }
+                  },
+                  "Shape" : null
+                },
+                "factory" : null,
+                "runtimeAttributes" : [
+                  [
+                    "isAccessibilityEnabled",
+                    {
+                      "typeName" : "Bool",
+                      "value" : false
+                    }
+                  ]
+                ]
+              },
+              "physicsMode" : "grid",
+              "title" : "pocaoRoxa",
+              "viewTransform" : {
+                "cameraTransform" : [
+                  0.92626255750656128,
+                  -2.0302832126617432e-07,
+                  0.37687870860099792,
+                  0,
+                  0.21055367588996887,
+                  0.82938516139984131,
+                  -0.51748168468475342,
+                  0,
+                  -0.31257748603820801,
+                  0.55867713689804077,
+                  0.76822853088378906,
+                  0,
+                  -0.67116141319274902,
+                  1.3395571708679199,
+                  1.4500609636306763,
+                  1
+                ],
+                "sceneTransform" : [
+                  1,
+                  0,
+                  0,
+                  0,
+                  0,
+                  1,
+                  0,
+                  0,
+                  0,
+                  0,
+                  1,
+                  0,
+                  0,
+                  0,
+                  0,
+                  1
+                ]
+              }
+            }
+          ],
+          "__version" : 5
+        },
+        {
+          "__content" : [
+            {
+              "arAnchorSpecification" : {
+                "name" : "image",
+                "physicalWidth" : 0.070000000298023224,
+                "url" : "image:c4bf95caeb706d076ea0f41ab0828281\/pocaoVermelha.png"
+              },
+              "behaviors" : [
+
+              ],
+              "gravity" : [
+                0,
+                -9.8000001907348633,
+                0
+              ],
+              "identifier" : "0258DA6F-4C8C-4F7D-9CCF-2E378BE66387",
+              "material" : "concrete",
+              "overrides" : {
+                "children" : {
+                  "5C3D2FB9-7B41-4564-BC82-132AE20CA429" : {
                     "overrides" : {
                       "children" : {
                         "USDScene" : {
@@ -69,7 +270,7 @@
                                 "RuntimeIdentifier",
                                 {
                                   "typeName" : "UUID",
-                                  "value" : "03A16718-6D0E-4F49-AFBE-3A12AF0E1AE2"
+                                  "value" : "9415EA79-E54C-4DA3-BF27-027A5EF5A4E6"
                                 }
                               ]
                             ]
@@ -105,7 +306,7 @@
                           "RuntimeIdentifier",
                           {
                             "typeName" : "UUID",
-                            "value" : "77D49FCB-7A65-42E7-B3EF-6CD395A9D6F1"
+                            "value" : "5AA48503-C1B1-4D5D-8FBD-594F5FC87495"
                           }
                         ],
                         [
@@ -119,26 +320,26 @@
                     },
                     "transform" : {
                       "matrix" : [
-                        0.080845542252063751,
+                        0.0010002426570281386,
                         0,
                         0,
                         0,
                         0,
-                        0.080845542252063751,
+                        0.0010002426570281386,
                         0,
                         0,
                         0,
                         0,
-                        0.080845542252063751,
+                        0.0010002426570281386,
                         0,
-                        0.20695161819458008,
-                        4.881566047668457,
-                        -1.9073329440288944e-06,
+                        -0.0075059677474200726,
+                        0.073399566113948822,
+                        -0.13595254719257355,
                         1
                       ]
                     }
                   },
-                  "B91C7CA3-4AB1-4253-9A84-07383168A8A8" : null
+                  "Shape" : null
                 },
                 "factory" : null,
                 "runtimeAttributes" : [
@@ -155,21 +356,21 @@
               "title" : "pocaoVermelha",
               "viewTransform" : {
                 "cameraTransform" : [
-                  0.99934881925582886,
-                  9.3132257461547852e-10,
-                  0.036081075668334961,
+                  0.82391536235809326,
+                  -3.2782551784293901e-07,
+                  0.56671273708343506,
                   0,
-                  0.014250699430704117,
-                  0.91869676113128662,
-                  -0.39470627903938293,
+                  0.12545910477638245,
+                  0.97518759965896606,
+                  -0.18239812552928925,
                   0,
-                  -0.033147566020488739,
-                  0.39496341347694397,
-                  0.9180985689163208,
+                  -0.55265140533447266,
+                  0.22137996554374695,
+                  0.80347198247909546,
                   0,
-                  3.560901403427124,
-                  17.447208404541016,
-                  45.528656005859375,
+                  -1.0842750072479248,
+                  1.0777947902679443,
+                  2.0742673873901367,
                   1
                 ],
                 "sceneTransform" : [
@@ -178,12 +379,12 @@
                   0,
                   0,
                   0,
-                  0.99999994039535522,
+                  1,
                   0,
                   0,
                   0,
                   0,
-                  0.99999994039535522,
+                  1,
                   0,
                   0,
                   0,
@@ -199,8 +400,9 @@
           "__content" : [
             {
               "arAnchorSpecification" : {
-                "alignment" : "horizontal",
-                "name" : "surface"
+                "name" : "image",
+                "physicalWidth" : 0.070000000298023224,
+                "url" : "image:2c79db3d0f2e166cd18e4a5092ad5ff8\/pocaoAzul.png"
               },
               "behaviors" : [
 
@@ -210,12 +412,195 @@
                 -9.8000001907348633,
                 0
               ],
-              "identifier" : "C29C8D83-60E9-4C39-B5B3-EE7A20052A65",
+              "identifier" : "9376F7B7-99DB-4A74-903A-11713EEB9FFF",
               "material" : "concrete",
               "overrides" : {
                 "children" : {
-                  "B1174011-ABED-410C-9F17-78DA65D471DE" : null,
-                  "C2F81851-B024-48DA-8E2F-CCABE894CC2D" : {
+                  "281127F7-A68B-4F6D-896C-46DBB4F44D19" : null,
+                  "DBF717AA-0032-4FC6-A2B1-BD2A65D51FD3" : {
+                    "overrides" : {
+                      "children" : {
+                        "USDScene" : {
+                          "overrides" : {
+                            "arguments" : [
+                              [
+                                "includeSceneScaling",
+                                {
+                                  "typeName" : "Bool",
+                                  "value" : false
+                                }
+                              ],
+                              [
+                                "subpath",
+                                {
+                                  "typeName" : "String",
+                                  "value" : ""
+                                }
+                              ],
+                              [
+                                "url",
+                                {
+                                  "typeName" : "String",
+                                  "value" : "model:61fd039556f147461a48aeccd9f2b0e1\/pocoesAzulNova.usdz"
+                                }
+                              ],
+                              [
+                                "withDescendants",
+                                {
+                                  "typeName" : "Bool",
+                                  "value" : true
+                                }
+                              ]
+                            ],
+                            "factory" : {
+                              "identifier" : "com.apple.af.FileImportAssetFactory",
+                              "version" : "0.0"
+                            },
+                            "runtimeAttributes" : [
+                              [
+                                "RuntimeIdentifier",
+                                {
+                                  "typeName" : "UUID",
+                                  "value" : "FA78BCF8-7AEA-4671-8459-918E25589D94"
+                                }
+                              ]
+                            ]
+                          },
+                          "transform" : {
+                            "matrix" : [
+                              1,
+                              0,
+                              0,
+                              0,
+                              0,
+                              1,
+                              0,
+                              0,
+                              0,
+                              0,
+                              1,
+                              0,
+                              0,
+                              0,
+                              0,
+                              1
+                            ]
+                          }
+                        }
+                      },
+                      "factory" : {
+                        "identifier" : "com.apple.af.Group",
+                        "version" : "0.0"
+                      },
+                      "runtimeAttributes" : [
+                        [
+                          "RuntimeIdentifier",
+                          {
+                            "typeName" : "UUID",
+                            "value" : "EEC383FB-9CE8-408A-A89D-065EEF19D1AE"
+                          }
+                        ]
+                      ]
+                    },
+                    "transform" : {
+                      "matrix" : [
+                        0.0011656431015580893,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0.0011656431015580893,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0.0011656431015580893,
+                        0,
+                        0.023375021293759346,
+                        0.091241829097270966,
+                        0.031727474182844162,
+                        1
+                      ]
+                    }
+                  },
+                  "Shape" : null
+                },
+                "factory" : null,
+                "runtimeAttributes" : [
+                  [
+                    "isAccessibilityEnabled",
+                    {
+                      "typeName" : "Bool",
+                      "value" : false
+                    }
+                  ]
+                ]
+              },
+              "physicsMode" : "grid",
+              "title" : "pocaoAzul",
+              "viewTransform" : {
+                "cameraTransform" : [
+                  0.78585761785507202,
+                  -6.7520886659622192e-08,
+                  0.61840742826461792,
+                  0,
+                  0.10409710556268692,
+                  0.98573052883148193,
+                  -0.13228398561477661,
+                  0,
+                  -0.60958296060562134,
+                  0.16833077371120453,
+                  0.77464395761489868,
+                  0,
+                  -3.3883707523345947,
+                  1.7742033004760742,
+                  2.4899122714996338,
+                  1
+                ],
+                "sceneTransform" : [
+                  1,
+                  0,
+                  0,
+                  0,
+                  0,
+                  1,
+                  0,
+                  0,
+                  0,
+                  0,
+                  1,
+                  0,
+                  0,
+                  0,
+                  0,
+                  1
+                ]
+              }
+            }
+          ],
+          "__version" : 5
+        },
+        {
+          "__content" : [
+            {
+              "arAnchorSpecification" : {
+                "name" : "image",
+                "physicalWidth" : 0.070000000298023224,
+                "url" : "image:c4093b03a6cabf8d10f7f824432abe01\/pocaoAmarela.png"
+              },
+              "behaviors" : [
+
+              ],
+              "gravity" : [
+                0,
+                -9.8000001907348633,
+                0
+              ],
+              "identifier" : "2DD68F4D-D184-4BDC-901F-ABDB55A065BA",
+              "material" : "concrete",
+              "overrides" : {
+                "children" : {
+                  "CA1F76BB-5D23-4CBC-B0C5-CFBFC79943F0" : {
                     "overrides" : {
                       "children" : {
                         "USDScene" : {
@@ -259,7 +644,7 @@
                                 "RuntimeIdentifier",
                                 {
                                   "typeName" : "UUID",
-                                  "value" : "1AA1C4FB-9706-4DEF-BD25-6EAFA2E33252"
+                                  "value" : "F7925878-B4B8-41D6-9A56-5109A5341645"
                                 }
                               ]
                             ]
@@ -295,33 +680,40 @@
                           "RuntimeIdentifier",
                           {
                             "typeName" : "UUID",
-                            "value" : "A66700EF-8EEF-447E-810F-5101343F89C8"
+                            "value" : "4D230FFC-8C56-4997-9C7B-13DD3F5A2D9C"
+                          }
+                        ],
+                        [
+                          "entityName",
+                          {
+                            "typeName" : "String",
+                            "value" : "pocaoAmarelaObj"
                           }
                         ]
                       ]
                     },
                     "transform" : {
                       "matrix" : [
-                        0.079999998211860657,
+                        0.0012641614302992821,
                         0,
                         0,
                         0,
                         0,
-                        0.079999998211860657,
+                        0.0012641614302992821,
                         0,
                         0,
                         0,
                         0,
-                        0.079999998211860657,
+                        0.0012641610810533166,
                         0,
-                        0.32203567028045654,
-                        6.3635826110839844,
-                        -4.2915326048387215e-06,
+                        -5.1654492381203454e-06,
+                        0.10055745393037796,
+                        -0.067297257483005524,
                         1
                       ]
                     }
                   },
-                  "Cube" : null
+                  "Shape" : null
                 },
                 "factory" : null,
                 "runtimeAttributes" : [
@@ -338,21 +730,21 @@
               "title" : "pocaoAmarela",
               "viewTransform" : {
                 "cameraTransform" : [
-                  0.99931538105010986,
-                  -1.8626450382086546e-09,
-                  0.036995965987443924,
+                  0.429207444190979,
+                  -1.1920928244535389e-07,
+                  0.90320593118667603,
                   0,
-                  0.018544064834713936,
-                  0.86530512571334839,
-                  -0.50090223550796509,
+                  0.45568504929542542,
+                  0.86340028047561646,
+                  -0.21654340624809265,
                   0,
-                  -0.032012801617383957,
-                  0.50124543905258179,
-                  0.86471271514892578,
+                  -0.77982825040817261,
+                  0.50451946258544922,
+                  0.37057787179946899,
                   0,
-                  1.1664059162139893,
-                  20.966651916503906,
-                  37.514022827148438,
+                  -2.9565753936767578,
+                  2.4122419357299805,
+                  1.5663003921508789,
                   1
                 ],
                 "sceneTransform" : [
@@ -361,12 +753,12 @@
                   0,
                   0,
                   0,
-                  0.99999994039535522,
+                  1,
                   0,
                   0,
                   0,
                   0,
-                  0.99999994039535522,
+                  1,
                   0,
                   0,
                   0,
@@ -382,8 +774,9 @@
           "__content" : [
             {
               "arAnchorSpecification" : {
-                "alignment" : "horizontal",
-                "name" : "surface"
+                "name" : "image",
+                "physicalWidth" : 0.14000000059604645,
+                "url" : "image:599b4a256fc276cd8809274accc2481a\/pocaoLaranja.png"
               },
               "behaviors" : [
 
@@ -393,11 +786,11 @@
                 -9.8000001907348633,
                 0
               ],
-              "identifier" : "65DE097C-3F3C-4A95-9FD7-0114471D7698",
+              "identifier" : "90E1C56D-1B28-4F6E-A0C1-34B5DB2F4EC9",
               "material" : "concrete",
               "overrides" : {
                 "children" : {
-                  "5EEFDB9C-24BF-47A2-8EB7-33EDED55F940" : {
+                  "18A999EB-0B3B-4F16-90CD-42A974248E52" : {
                     "overrides" : {
                       "children" : {
                         "USDScene" : {
@@ -421,7 +814,7 @@
                                 "url",
                                 {
                                   "typeName" : "String",
-                                  "value" : "model:57e8a65da67a9e79445f97e70126163a\/pocoesVerde.usdz"
+                                  "value" : "model:27f0213ee99034a78710fe5a93836fd4\/pocoesLaranja.usdz"
                                 }
                               ],
                               [
@@ -441,7 +834,7 @@
                                 "RuntimeIdentifier",
                                 {
                                   "typeName" : "UUID",
-                                  "value" : "EDC3ABFC-314F-4AE2-BA0C-E85F59C80F96"
+                                  "value" : "DBA4FE46-317B-49C8-A508-8D9C29C2EB66"
                                 }
                               ]
                             ]
@@ -477,34 +870,224 @@
                           "RuntimeIdentifier",
                           {
                             "typeName" : "UUID",
-                            "value" : "AD2B39E6-6688-4A4C-9C09-35FA4A9BBFD0"
+                            "value" : "D99CC8A6-7C56-47A6-8014-128AF7889E6B"
+                          }
+                        ],
+                        [
+                          "entityName",
+                          {
+                            "typeName" : "String",
+                            "value" : "pocaoLaranjaObj"
                           }
                         ]
                       ]
                     },
                     "transform" : {
                       "matrix" : [
-                        0.079999998211860657,
+                        0.0011696385918185115,
                         0,
                         0,
                         0,
                         0,
-                        0.079999998211860657,
+                        0.0011696385918185115,
                         0,
                         0,
                         0,
                         0,
-                        0.079999998211860657,
+                        0.0011696385918185115,
                         0,
-                        3.814697265625e-06,
-                        6.3635849952697754,
-                        0.20250195264816284,
+                        -0.0072636008262634277,
+                        0.093038648366928101,
+                        -0.041073929518461227,
                         1
                       ]
                     }
                   },
-                  "99428C69-3718-4CF5-AF21-0E1A70AE85C8" : null,
-                  "Cube" : null
+                  "Shape" : null
+                },
+                "factory" : null,
+                "runtimeAttributes" : [
+                  [
+                    "isAccessibilityEnabled",
+                    {
+                      "typeName" : "Bool",
+                      "value" : false
+                    }
+                  ]
+                ]
+              },
+              "physicsMode" : "grid",
+              "title" : "pocaoLaranja",
+              "viewTransform" : {
+                "cameraTransform" : [
+                  0.88292884826660156,
+                  -3.7252899431905462e-08,
+                  0.46950668096542358,
+                  0,
+                  0.16790139675140381,
+                  0.93387013673782349,
+                  -0.31574621796607971,
+                  0,
+                  -0.43845826387405396,
+                  0.3576122522354126,
+                  0.82454091310501099,
+                  0,
+                  -1.1880141496658325,
+                  1.8699334859848022,
+                  3.4522523880004883,
+                  1
+                ],
+                "sceneTransform" : [
+                  1,
+                  0,
+                  0,
+                  0,
+                  0,
+                  1,
+                  0,
+                  0,
+                  0,
+                  0,
+                  1,
+                  0,
+                  0,
+                  0,
+                  0,
+                  1
+                ]
+              }
+            }
+          ],
+          "__version" : 5
+        },
+        {
+          "__content" : [
+            {
+              "arAnchorSpecification" : {
+                "name" : "image",
+                "physicalWidth" : 0.14000000059604645,
+                "url" : "image:0c964dc30a735214d2997278a06b2e09\/pocaoVerde.png"
+              },
+              "behaviors" : [
+
+              ],
+              "gravity" : [
+                0,
+                -9.8000001907348633,
+                0
+              ],
+              "identifier" : "647473E4-F57F-47E0-A4C4-DF83B19A3922",
+              "material" : "concrete",
+              "overrides" : {
+                "children" : {
+                  "4FBF0FD8-0375-4CA4-AB68-47197FF840B3" : {
+                    "overrides" : {
+                      "children" : {
+                        "USDScene" : {
+                          "overrides" : {
+                            "arguments" : [
+                              [
+                                "includeSceneScaling",
+                                {
+                                  "typeName" : "Bool",
+                                  "value" : false
+                                }
+                              ],
+                              [
+                                "subpath",
+                                {
+                                  "typeName" : "String",
+                                  "value" : ""
+                                }
+                              ],
+                              [
+                                "url",
+                                {
+                                  "typeName" : "String",
+                                  "value" : "model:85d919abe35814a890ddcee1e66ccfef\/pocoesVerdeNovo.usdz"
+                                }
+                              ],
+                              [
+                                "withDescendants",
+                                {
+                                  "typeName" : "Bool",
+                                  "value" : true
+                                }
+                              ]
+                            ],
+                            "factory" : {
+                              "identifier" : "com.apple.af.FileImportAssetFactory",
+                              "version" : "0.0"
+                            },
+                            "runtimeAttributes" : [
+                              [
+                                "RuntimeIdentifier",
+                                {
+                                  "typeName" : "UUID",
+                                  "value" : "89848D5F-CD5B-44A3-B42A-0D1F970F65D6"
+                                }
+                              ]
+                            ]
+                          },
+                          "transform" : {
+                            "matrix" : [
+                              1,
+                              0,
+                              0,
+                              0,
+                              0,
+                              1,
+                              0,
+                              0,
+                              0,
+                              0,
+                              1,
+                              0,
+                              0,
+                              0,
+                              0,
+                              1
+                            ]
+                          }
+                        }
+                      },
+                      "factory" : {
+                        "identifier" : "com.apple.af.Group",
+                        "version" : "0.0"
+                      },
+                      "runtimeAttributes" : [
+                        [
+                          "RuntimeIdentifier",
+                          {
+                            "typeName" : "UUID",
+                            "value" : "BD0D37FA-7C0B-4BFC-AFF8-5517C1149C83"
+                          }
+                        ]
+                      ]
+                    },
+                    "transform" : {
+                      "matrix" : [
+                        0.001041322248056531,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0.001041322248056531,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0.001041322248056531,
+                        0,
+                        2.4279124772874638e-06,
+                        0.081510491669178009,
+                        0.039954505860805511,
+                        1
+                      ]
+                    }
+                  },
+                  "257D9BD5-CF1A-428B-8DA9-3ED5319BA39F" : null,
+                  "Shape" : null
                 },
                 "factory" : null,
                 "runtimeAttributes" : [
@@ -521,21 +1104,21 @@
               "title" : "pocaoVerde",
               "viewTransform" : {
                 "cameraTransform" : [
-                  0.12312691658735275,
-                  -1.1175870895385742e-08,
-                  0.99239087104797363,
+                  0.72585642337799072,
+                  -1.4156103134155273e-07,
+                  0.68784618377685547,
                   0,
-                  0.38101333379745483,
-                  0.92336028814315796,
-                  -0.047272730618715286,
+                  0.19873173534870148,
+                  0.95735359191894531,
+                  -0.20971333980560303,
                   0,
-                  -0.91633427143096924,
-                  0.38393476605415344,
-                  0.11369053274393082,
+                  -0.65851199626922607,
+                  0.28891867399215698,
+                  0.69490128755569458,
                   0,
-                  -37.584644317626953,
-                  15.967307090759277,
-                  15.20134449005127,
+                  -1.3952358961105347,
+                  1.3216989040374756,
+                  1.8012902736663818,
                   1
                 ],
                 "sceneTransform" : [
@@ -544,89 +1127,12 @@
                   0,
                   0,
                   0,
-                  0.99999994039535522,
-                  0,
-                  0,
-                  0,
-                  0,
-                  0.99999994039535522,
-                  0,
-                  0,
-                  0,
-                  0,
-                  1
-                ]
-              }
-            }
-          ],
-          "__version" : 5
-        },
-        {
-          "__content" : [
-            {
-              "arAnchorSpecification" : {
-                "alignment" : "horizontal",
-                "name" : "surface"
-              },
-              "behaviors" : [
-
-              ],
-              "gravity" : [
-                0,
-                -9.8000001907348633,
-                0
-              ],
-              "identifier" : "34A56963-980F-4638-913F-6B8A0B1FCD3D",
-              "material" : "concrete",
-              "overrides" : {
-                "children" : {
-                  "Cube" : null,
-                  "E2DCC77D-5CCF-4C39-BF9F-9053E3642671" : null
-                },
-                "factory" : null,
-                "runtimeAttributes" : [
-                  [
-                    "isAccessibilityEnabled",
-                    {
-                      "typeName" : "Bool",
-                      "value" : false
-                    }
-                  ]
-                ]
-              },
-              "physicsMode" : "grid",
-              "title" : "Cena",
-              "viewTransform" : {
-                "cameraTransform" : [
-                  0.0070298756472766399,
-                  6.3562758612079051e-08,
-                  0.99997526407241821,
-                  0,
-                  0.24164669215679169,
-                  0.97036278247833252,
-                  -0.0016988288844004273,
-                  0,
-                  -0.97033882141113281,
-                  0.24165259301662445,
-                  0.0068215131759643555,
-                  0,
-                  -0.89282780885696411,
-                  0.2427138090133667,
-                  0.021905798465013504,
-                  1
-                ],
-                "sceneTransform" : [
                   1,
                   0,
                   0,
                   0,
                   0,
-                  0.99999994039535522,
-                  0,
-                  0,
-                  0,
-                  0,
-                  0.99999994039535522,
+                  1,
                   0,
                   0,
                   0,

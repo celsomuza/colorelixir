@@ -18,5 +18,85 @@
     "libraryIdentifier" : "07fa7429a5526de2077c36943c63aa7a",
     "format" : "model",
     "displayName" : "pocoesAzul.usdz"
+  },
+  {
+    "libraryIdentifier" : "27f0213ee99034a78710fe5a93836fd4",
+    "format" : "model",
+    "displayName" : "pocoesLaranja.usdz"
+  },
+  {
+    "libraryIdentifier" : "b6faf28db5be8a86aef3f6f714824ef8",
+    "format" : "model",
+    "displayName" : "pocoesRoxo.usdz"
+  },
+  {
+    "libraryIdentifier" : "61fd039556f147461a48aeccd9f2b0e1",
+    "format" : "model",
+    "displayName" : "pocoesAzulNova.usdz"
+  },
+  {
+    "libraryIdentifier" : "85d919abe35814a890ddcee1e66ccfef",
+    "format" : "model",
+    "displayName" : "pocoesVerdeNovo.usdz"
+  },
+  {
+    "libraryIdentifier" : "99220ea1644c9fa3497e9d0d31e81f97",
+    "format" : "image",
+    "displayName" : "pocaoRoxo.png"
+  },
+  {
+    "libraryIdentifier" : "c4bf95caeb706d076ea0f41ab0828281",
+    "format" : "image",
+    "displayName" : "pocaoVermelha.png"
+  },
+  {
+    "libraryIdentifier" : "2c79db3d0f2e166cd18e4a5092ad5ff8",
+    "format" : "image",
+    "displayName" : "pocaoAzul.png"
+  },
+  {
+    "libraryIdentifier" : "c4093b03a6cabf8d10f7f824432abe01",
+    "format" : "image",
+    "displayName" : "pocaoAmarela.png"
+  },
+  {
+    "libraryIdentifier" : "599b4a256fc276cd8809274accc2481a",
+    "format" : "image",
+    "displayName" : "pocaoLaranja.png"
+  },
+  {
+    "libraryIdentifier" : "0c964dc30a735214d2997278a06b2e09",
+    "format" : "image",
+    "displayName" : "pocaoVerde.png"
+  },
+  {
+    "libraryIdentifier" : "cfcd4ab05d208010c585101763eb1d03",
+    "format" : "image",
+    "displayName" : "5422C6A5-F06E-42E2-A8F5-9EAA880B40DC_1_201_a.heic"
+  },
+  {
+    "libraryIdentifier" : "7043d9d99ddbae3a7b6afa58a0573675",
+    "format" : "image",
+    "displayName" : "E3C69848-92BA-477F-9D33-A5239A56E2BD_1_201_a.heic"
+  },
+  {
+    "libraryIdentifier" : "4f9284011ae8a967af4261fc4df6ad6d",
+    "format" : "image",
+    "displayName" : "E36EF224-25B0-4482-A1C0-C251E50CAE39_1_201_a.heic"
+  },
+  {
+    "libraryIdentifier" : "b5adbf251161e28f66b092ee86c44a67",
+    "format" : "image",
+    "displayName" : "DC744112-4E3B-4519-9B54-1B21B1FF4FBE_1_201_a.heic"
+  },
+  {
+    "libraryIdentifier" : "23b147c55883689c6c4435eefa8eb012",
+    "format" : "image",
+    "displayName" : "55AAA129-F906-404A-8B4B-77393E219E72_1_201_a.heic"
+  },
+  {
+    "libraryIdentifier" : "349131d6b52962e1c21f20c85c928580",
+    "format" : "image",
+    "displayName" : "C34B95DD-C6D9-4B63-A17A-D4D6593D8D7F_1_201_a.heic"
   }
 ]

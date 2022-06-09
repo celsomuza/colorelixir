@@ -16,98 +16,34 @@ struct ContentView : View {
 }
 
 struct MenuView: View {
-    @State var isActive : Bool = false
-    @State private var showingGame: Bool = false
+    @State private var showingInstructions: Bool = false
     var body: some View {
-   
-
-        NavigationView {
+        
+        if !showingInstructions {
             VStack(alignment: .center) {
-                MenuContentView()
-                    .navigationTitle("")
-                            
-                
                 Image("imgMenu")
-                .scaledToFit()
-                .padding()
+                    .resizable()
+                    .scaledToFit()
+                    .padding()
                 
-                
-                NavigationLink(destination: GameView(gameIsActive: self.$isActive),isActive: self.$isActive, label: {
-                    Text("Vamos Nessa!")
-                        .bold()
-                        .frame(width: 280, height: 50)
-                        .background(Color.black)
-                        .foregroundColor(.white)
-                        .cornerRadius(10)
-                        
-                        
-                })
+                Button("Vamos nessa!") {
+                    showingInstructions = true
+                }
+                .frame(width: 280, height: 50)
+                .background(Color.black)
+                .foregroundColor(.white)
+                .cornerRadius(10)
                 
                 Spacer(minLength: 120)
                 
                 
-
-        if !showingGame {
-            NavigationView {
-                VStack(alignment: .center) {
-                    MenuContentView()
-                        .navigationTitle("")
-                                
-                    
-                    
-                    Image("imgMenu")
-                    //.resizable()
-                    //.frame(width: UIScreen.main.bounds.width * 0.4, height: UIScreen.main.bounds.height * 0.3)
-                    .scaledToFit()
-                    .padding()
-                    
-                    Button("Start") {
-                        showingGame = true
-                    }
-                    .background(Color.black)
-                    .foregroundColor(.white)
-                    .cornerRadius(10)
-                    
-//                    NavigationLink(destination: { GameView() } ,isActive: $isActive, label: {
-//                        Text("Start")
-//                            .bold()
-//                            .frame(width: 280, height: 50)
-//                            .background(Color.black)
-//                            .foregroundColor(.white)
-//                            .cornerRadius(10)
-//
-//
-//                    })
-                    
-                    
-                    Spacer(minLength: 120)
-                    
-                    
-                }
-
             }
+            
         }
         
         else {
-            GameView()
+            InstructionsView()
         }
-    }
-}
-
-
-
-struct MenuContentView: View {
-    var body: some View {
-            VStack {
-                Text("")
-                    .font(.headline)
-                    .fontWeight(.semibold)
-                    .foregroundColor(.black)
-                    .multilineTextAlignment(.leading)
-                    .padding()
-                    .lineLimit(.max)
-            }
-
     }
 }
 
@@ -150,8 +86,63 @@ class SectionDelegate: NSObject, ARSessionDelegate {
                 let entity = AnchorEntity(anchor: imageAnchor)
                 
                 if let scene = try? Experience.loadPocaoVermelha() {
-                    if let dice = scene.findEntity(named: "pocaoVermelhaObjt") {
-                        entity.addChild(dice)
+                    if let pocaoVermelha = scene.findEntity(named: "pocaoVermelhaObj") {
+                        entity.addChild(pocaoVermelha)
+                        arview?.scene.addAnchor(entity)
+                    }
+                }
+            }
+            
+            if let imageName = imageAnchor.name, imageName == "pocaoAmarela" {
+                let entity = AnchorEntity(anchor: imageAnchor)
+                
+                if let scene = try? Experience.loadPocaoAmarela() {
+                    if let pocaoAmarela = scene.findEntity(named: "pocaoAmarelaObj") {
+                        entity.addChild(pocaoAmarela)
+                        arview?.scene.addAnchor(entity)
+                    }
+                }
+            }
+            
+            if let imageName = imageAnchor.name, imageName == "pocaoAzul" {
+                let entity = AnchorEntity(anchor: imageAnchor)
+                
+                if let scene = try? Experience.loadPocaoAzul() {
+                    if let pocaoAzul = scene.findEntity(named: "pocaoAzulObj") {
+                        entity.addChild(pocaoAzul)
+                        arview?.scene.addAnchor(entity)
+                    }
+                }
+            }
+            
+            if let imageName = imageAnchor.name, imageName == "pocaoLaranja" {
+                let entity = AnchorEntity(anchor: imageAnchor)
+                
+                if let scene = try? Experience.loadPocaoLaranja() {
+                    if let pocaoLaranja = scene.findEntity(named: "pocaoLaranjaObj") {
+                        entity.addChild(pocaoLaranja)
+                        arview?.scene.addAnchor(entity)
+                    }
+                }
+            }
+            
+            if let imageName = imageAnchor.name, imageName == "pocaoVerde" {
+                let entity = AnchorEntity(anchor: imageAnchor)
+                
+                if let scene = try? Experience.loadPocaoVerde() {
+                    if let pocaoVerde = scene.findEntity(named: "pocaoVerdeObj") {
+                        entity.addChild(pocaoVerde)
+                        arview?.scene.addAnchor(entity)
+                    }
+                }
+            }
+            
+            if let imageName = imageAnchor.name, imageName == "pocaoRoxa" {
+                let entity = AnchorEntity(anchor: imageAnchor)
+                
+                if let scene = try? Experience.loadPocaoRoxa() {
+                    if let pocaoRoxa = scene.findEntity(named: "pocaoRoxaObj") {
+                        entity.addChild(pocaoRoxa)
                         arview?.scene.addAnchor(entity)
                     }
                 }
