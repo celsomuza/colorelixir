@@ -20,6 +20,33 @@ struct MenuView: View {
     @State private var showingGame: Bool = false
     var body: some View {
    
+
+        NavigationView {
+            VStack(alignment: .center) {
+                MenuContentView()
+                    .navigationTitle("")
+                            
+                
+                Image("imgMenu")
+                .scaledToFit()
+                .padding()
+                
+                
+                NavigationLink(destination: GameView(gameIsActive: self.$isActive),isActive: self.$isActive, label: {
+                    Text("Vamos Nessa!")
+                        .bold()
+                        .frame(width: 280, height: 50)
+                        .background(Color.black)
+                        .foregroundColor(.white)
+                        .cornerRadius(10)
+                        
+                        
+                })
+                
+                Spacer(minLength: 120)
+                
+                
+
         if !showingGame {
             NavigationView {
                 VStack(alignment: .center) {
@@ -57,6 +84,7 @@ struct MenuView: View {
                     
                     
                 }
+
             }
         }
         
