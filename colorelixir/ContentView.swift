@@ -7,6 +7,7 @@
 
 import SwiftUI
 import RealityKit
+import ARKit
 
 struct ContentView : View {
     var body: some View {
@@ -16,51 +17,52 @@ struct ContentView : View {
 
 struct MenuView: View {
     @State var isActive : Bool = false
-    
+    @State private var showingGame: Bool = false
     var body: some View {
    
-        NavigationView {
-            VStack(alignment: .center) {
-                MenuContentView()
-                    .navigationTitle("")
-                            
-                
-                
-                Image("imgMenu")
-                //.resizable()
-                //.frame(width: UIScreen.main.bounds.width * 0.4, height: UIScreen.main.bounds.height * 0.3)
-                .scaledToFit()
-                .padding()
-                
-                
-                NavigationLink(destination: GameView(gameIsActive: self.$isActive),isActive: self.$isActive, label: {
-                    Text("Start")
-                        .bold()
-                        .frame(width: 280, height: 50)
-                        .background(Color.black)
-                        .foregroundColor(.white)
-                        .cornerRadius(10)
-                        
-                        
-                })
-                
-                NavigationLink(destination: InstructionsView(instructionsIsActive: self.$isActive),isActive: self.$isActive, label: {
-                    Text("Instructions")
-                        .bold()
-                        .frame(width: 280, height: 50)
-                        .background(Color.black)
-                        .foregroundColor(.white)
-                        .cornerRadius(10)
-                        .padding()
+        if !showingGame {
+            NavigationView {
+                VStack(alignment: .center) {
+                    MenuContentView()
+                        .navigationTitle("")
+                                
                     
-                        
-                })
-                
-                Spacer(minLength: 120)
-                
-                
+                    
+                    Image("imgMenu")
+                    //.resizable()
+                    //.frame(width: UIScreen.main.bounds.width * 0.4, height: UIScreen.main.bounds.height * 0.3)
+                    .scaledToFit()
+                    .padding()
+                    
+                    Button("Start") {
+                        showingGame = true
+                    }
+                    .background(Color.black)
+                    .foregroundColor(.white)
+                    .cornerRadius(10)
+                    
+//                    NavigationLink(destination: { GameView() } ,isActive: $isActive, label: {
+//                        Text("Start")
+//                            .bold()
+//                            .frame(width: 280, height: 50)
+//                            .background(Color.black)
+//                            .foregroundColor(.white)
+//                            .cornerRadius(10)
+//
+//
+//                    })
+                    
+                    
+                    Spacer(minLength: 120)
+                    
+                    
+                }
             }
-        } .navigationViewStyle(.stack)
+        }
+        
+        else {
+            GameView()
+        }
     }
 }
 
@@ -87,18 +89,47 @@ struct ARViewContainer: UIViewRepresentable {
         
         let arView = ARView(frame: .zero)
         
-        // Load the "Box" scene from the "Experience" Reality File
-        let boxAnchor = try! Experience.loadBox()
+        let configuration = ARImageTrackingConfiguration()
         
-        // Add the box anchor to the scene
-        arView.scene.anchors.append(boxAnchor)
+        if let imagesToTrack = ARReferenceImage.referenceImages(inGroupNamed: "AR Resources", bundle: Bundle.main) {
+            configuration.trackingImages = imagesToTrack
+            configuration.maximumNumberOfTrackedImages = 8
+        }
         
+        arView.session.run(configuration)
+        arView.session.delegate = context.coordinator
+        context.coordinator.arview = arView
         return arView
         
     }
     
     func updateUIView(_ uiView: ARView, context: Context) {}
     
+    func makeCoordinator() -> SectionDelegate {
+        SectionDelegate()
+    }
+    
+}
+
+class SectionDelegate: NSObject, ARSessionDelegate {
+    weak var arview: ARView?
+    
+    func session(_ session: ARSession, didAdd anchors: [ARAnchor]) {
+        for anchor in anchors {
+            guard let imageAnchor = anchor as? ARImageAnchor else { return }
+            
+            if let imageName = imageAnchor.name, imageName == "pocaoVermelha" {
+                let entity = AnchorEntity(anchor: imageAnchor)
+                
+                if let scene = try? Experience.loadPocaoVermelha() {
+                    if let dice = scene.findEntity(named: "pocaoVermelhaObjt") {
+                        entity.addChild(dice)
+                        arview?.scene.addAnchor(entity)
+                    }
+                }
+            }
+        }
+    }
 }
 
 #if DEBUG

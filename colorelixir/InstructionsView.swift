@@ -15,7 +15,7 @@ struct InstructionsView: View {
             InstructionsContentView()
                 .navigationTitle("Instructions Screen")
             ZStack {
-                NavigationLink(destination: GameView(gameIsActive: self.$instructionsIsActive), label: {
+                NavigationLink(destination: GameView(), label: {
                     Text("Ready")
                         .bold()
                         .frame(width: 280, height: 50)
